@@ -5,7 +5,7 @@ import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
 import SideDrawer from "./SideDrawer";
 import Backdrop from "../UIElements/Backdrop";
-
+import Logo from "../../../images/logo.png";
 import "./MainNavigation.css";
 
 const MainNavigation = (props) => {
@@ -37,7 +37,9 @@ const MainNavigation = (props) => {
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/">Your Places</Link>
+          <Link to="/">
+            <img src={Logo} alt="Logo" width={150} height={110} />
+          </Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />
